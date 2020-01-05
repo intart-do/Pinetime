@@ -189,10 +189,10 @@ void DisplayApp::RunningState() {
   auto currentHours = hours + deltaHours;
 
   char minutesChar[3];
-  sprintf(minutesChar, "%02d", currentMinutes);
+  sprintf(minutesChar, "%02lu", currentMinutes);
 
   char hoursChar[3];
-  sprintf(hoursChar, "%02d", currentHours);
+  sprintf(hoursChar, "%02lu", currentHours);
 
   uint8_t x = 7;
   if (hoursChar[0] != currentChar[0]) {
